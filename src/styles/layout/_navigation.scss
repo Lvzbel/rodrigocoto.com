@@ -1,5 +1,5 @@
 .navigation {
-  background: #04000667;
+  background: #0400064b;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@
 
   &__logo-text {
     margin: auto 0;
-    font-size: $l-size;
+    font-size: 3.6rem;
     font-family: 'Audiowide', cursive;
     color: $color-pink;
     animation: logoNeonFlash 3s infinite;
@@ -26,22 +26,23 @@
     &:link,
     &:visited {
       display: inline-block;
-      font-size: 2rem;
+      font-size: $m-size;
       padding: 1rem 2rem;
-      color: $color-pink;
       text-decoration: none;
       text-transform: uppercase;
-      transition: color 0.4s infinite;
-      font-weight: 600;
+      color: $color-aqua;
+      font-weight: 700;
+      transition: all 400ms;
     }
 
     &:hover,
     &:active {
-      color: $color-aqua;
+      @include neonGlow($color-aqua);
     }
   }
 }
 
+// This animation is trying to recreate a neon sign flashing
 @keyframes logoNeonFlash {
   0%,
   12% {
