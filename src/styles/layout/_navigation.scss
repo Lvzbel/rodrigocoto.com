@@ -1,0 +1,40 @@
+.navigation {
+  background: #040006bb;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo-box {
+    display: flex;
+    padding: 1rem 2rem;
+  }
+
+  &__logo-text {
+    margin: auto 0;
+    font-size: $l-size;
+    // font-weight: 600;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      color: $color-pink;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.4s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-aqua;
+    }
+  }
+}
