@@ -1,5 +1,5 @@
 .navigation {
-  background: #040006bb;
+  background: #04000667;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -12,7 +12,9 @@
   &__logo-text {
     margin: auto 0;
     font-size: $l-size;
-    // font-weight: 600;
+    font-family: 'Audiowide', cursive;
+    color: $color-pink;
+    animation: logoNeonFlash 3s infinite;
   }
 
   &__list {
@@ -29,12 +31,40 @@
       color: $color-pink;
       text-decoration: none;
       text-transform: uppercase;
-      transition: all 0.4s;
+      transition: color 0.4s infinite;
+      font-weight: 600;
     }
 
     &:hover,
     &:active {
       color: $color-aqua;
     }
+  }
+}
+
+@keyframes logoNeonFlash {
+  0%,
+  12% {
+    @include neonGlow($color-pink);
+  }
+  15% {
+    @include offGlow($color-pink)
+  }
+  17% {
+    @include neonGlow($color-pink);
+  }
+  19% {
+    @include offGlow($color-pink)
+  }
+  20%,
+  80% {
+    @include neonGlow($color-pink);
+  }
+  81% {
+    @include offGlow($color-pink)
+  }
+  85%,
+  100% {
+    @include neonGlow($color-pink);
   }
 }
