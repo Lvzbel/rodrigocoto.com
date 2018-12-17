@@ -2,10 +2,6 @@
 @import './base/base';
 @import './base/typography';
 @import './abstracts/mixins';
+@import './components/button';
 @import './layout/navigation';
 @import './layout/header';
-
-body {
-  position: relative;
-  color: $color-aqua;
-}

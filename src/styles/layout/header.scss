@@ -11,6 +11,12 @@
   ,url(../images/hero-image-2.jpg);
   background-size: cover;
   background-position: top;
+
+    &__text-box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
 }
 
 // https://unsplash.com/photos/Ys-DBJeX0nE

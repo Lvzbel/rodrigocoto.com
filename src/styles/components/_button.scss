@@ -1,0 +1,18 @@
+.btn {
+  &:link,
+  &:visited {
+    font-family: 'Audiowide', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    color: $color-black;
+    background-color: $color-yellow;
+    margin: auto;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2)
+  }
+
+  &:hover {
+    margin-bottom: 1px solid $color-black;
+  }
+}
