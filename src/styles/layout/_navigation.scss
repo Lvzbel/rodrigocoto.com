@@ -4,6 +4,9 @@
   display: flex;
   justify-content: space-between;
   height: 8vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 
   &__logo-box {
     display: flex;
