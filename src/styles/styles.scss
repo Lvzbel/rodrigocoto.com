@@ -2,6 +2,7 @@
 @import './base/base';
 @import './abstracts/mixins';
 @import './layout/navigation';
+@import './layout/header';
 
 body {
   color: $color-aqua;

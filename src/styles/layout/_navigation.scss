@@ -1,12 +1,13 @@
 .navigation {
-  background: #0400064b;
+  // background: #0400064b;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 8vh;
 
   &__logo-box {
     display: flex;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
   }
 
   &__logo-text {
@@ -27,7 +28,7 @@
     &:visited {
       display: inline-block;
       font-size: $m-size;
-      padding: 1rem 2rem;
+      padding: 1rem 1.5rem;
       text-decoration: none;
       text-transform: uppercase;
       color: $color-aqua;
