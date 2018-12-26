@@ -18,7 +18,7 @@
     font-size: 3.6rem;
     font-family: 'Audiowide', cursive;
     color: $color-pink;
-    animation: logoNeonFlash 3s infinite;
+    animation: neonFlashGlow 3s infinite;
   }
 
   &__list {
@@ -41,13 +41,13 @@
 
     &:hover,
     &:active {
-      @include neonGlow($color-aqua);
+      animation: neonFlashGlow 2s infinite;
     }
   }
 }
 
 // This animation is trying to recreate a neon sign flashing
-@keyframes logoNeonFlash {
+@keyframes neonFlashGlow {
   0%,
   12% {
     @include neonGlow($color-pink);
@@ -56,20 +56,20 @@
     @include offGlow($color-pink)
   }
   17% {
-    @include neonGlow($color-pink);
+    @include neonGlow($color-pink)
   }
   19% {
     @include offGlow($color-pink)
   }
   20%,
   80% {
-    @include neonGlow($color-pink);
+    @include neonGlow($color-pink)
   }
   81% {
     @include offGlow($color-pink)
   }
   85%,
   100% {
-    @include neonGlow($color-pink);
+    @include neonGlow($color-pink)
   }
 }
