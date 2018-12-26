@@ -1,3 +1,16 @@
 .qualifications {
-  padding: 1rem 7.5rem;
+  padding: 5rem 7.5rem;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-evenly;
+
+    &-list {
+      width: 50rem;
+      height: 27rem;
+      margin: 1rem auto;
+    }
+  }
 }

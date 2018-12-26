@@ -20,3 +20,50 @@
     text-shadow: .5rem 1rem 2rem rgba($color-black, .3);
   }
 }
+
+.sections__title {
+  margin: 0px;
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: .7rem;
+  font-weight: 700rem;
+  color: $color-yellow;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  animation: titleFlashGlow 3s infinite;
+}
+
+.sections__description {
+  margin: 1.5rem 0px;
+  font-size: 1.8rem;
+  color: $color-yellow;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+}
+
+@keyframes titleFlashGlow {
+  0%,
+  12% {
+    @include neonGlow($color-yellow);
+  }
+  15% {
+    @include offGlow($color-yellow)
+  }
+  17% {
+    @include neonGlow($color-yellow)
+  }
+  19% {
+    @include offGlow($color-yellow)
+  }
+  20%,
+  80% {
+    @include neonGlow($color-yellow)
+  }
+  81% {
+    @include offGlow($color-yellow)
+  }
+  85%,
+  100% {
+    @include neonGlow($color-yellow)
+  }
+}
