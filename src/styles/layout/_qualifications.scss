@@ -1,5 +1,5 @@
 .qualifications {
-  padding: 12rem 0;
+  padding: 8rem 0;
 
   &__main-box {
     padding: 0 6rem;
@@ -8,6 +8,7 @@
   &__content {
     display: flex;
     width: 100%;
+    margin-top: 5rem;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-evenly;
@@ -19,6 +20,11 @@
       width: 49%;
       height: 27rem;
       margin: 0;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
