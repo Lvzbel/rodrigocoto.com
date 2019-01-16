@@ -38,17 +38,18 @@
     &:link,
     &:visited {
       display: inline-block;
-      font-size: $m-size;
+      font-size: 2rem;
       padding: 1rem 1.5rem;
       text-decoration: none;
       text-transform: uppercase;
       color: $color-aqua;
-      font-weight: 700;
+      font-weight: bolder;
       transition: all 400ms;
     }
 
     &:hover,
     &:active {
+      transform: scale(1.1);
       animation: neonFlashGlow 2s infinite;
     }
   }
