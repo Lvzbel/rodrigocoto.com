@@ -1,8 +1,13 @@
 .qualifications {
-  padding: 3rem 7.5rem;
+  padding: 12rem 0;
+
+  &__main-box {
+    padding: 0 6rem;
+  }
 
   &__content {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-evenly;
@@ -11,12 +16,9 @@
       display: grid;
       grid-template-columns: 35% 65%;
       grid-template-rows: 33% 33% 33%;
-      width: 50rem;
+      width: 49%;
       height: 27rem;
-      margin: 1rem auto;
-      // background-color: lighten( $color-purple, 1% );
-      padding: 1rem 4rem;
-      // box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
+      margin: 0;
     }
   }
 
@@ -38,5 +40,5 @@
   grid-row: 1 / 2;
   grid-column: 2 / 3;
   font-size: 2.3rem;
-  font-weight: 700
+  font-weight: 700;
 }
