@@ -3,21 +3,22 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1.5rem;
+  line-height: 6rem;
 
-  &--main{
+  &--main {
     display: block;
     font-size: 6rem;
     text-align: center;
     font-weight: 700;
-    text-shadow: .5rem 1rem 2rem rgba($color-black, .3);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.3);
   }
 
-  &--sub{
+  &--sub {
     display: block;
     font-size: 2.2rem;
     text-align: center;
     font-weight: 700;
-    text-shadow: .5rem 1rem 2rem rgba($color-black, .3);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.3);
   }
 }
 
@@ -25,22 +26,22 @@
   margin: 0px;
   font-size: 6rem;
   text-transform: uppercase;
-  letter-spacing: .7rem;
+  letter-spacing: 0.7rem;
   font-weight: 700rem;
   color: $color-white;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   text-align: center;
-  text-shadow: .5rem 1rem 2rem rgba($color-black, .3);
+  text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.3);
 }
 
 .sections__description {
   margin: 1.5rem 0px;
   font-size: 1.8rem;
   color: $color-white;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-weight: 700;
   text-align: center;
-  text-shadow: .5rem 1rem 2rem rgba($color-black, .3);
+  text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.3);
 }
 
 // Font Awesome Icons
@@ -59,24 +60,24 @@
     @include neonGlow($color-yellow);
   }
   15% {
-    @include offGlow($color-yellow)
+    @include offGlow($color-yellow);
   }
   17% {
-    @include neonGlow($color-yellow)
+    @include neonGlow($color-yellow);
   }
   19% {
-    @include offGlow($color-yellow)
+    @include offGlow($color-yellow);
   }
   20%,
   80% {
-    @include neonGlow($color-yellow)
+    @include neonGlow($color-yellow);
   }
   81% {
-    @include offGlow($color-yellow)
+    @include offGlow($color-yellow);
   }
   85%,
   100% {
-    @include neonGlow($color-yellow)
+    @include neonGlow($color-yellow);
   }
 }
 
@@ -86,23 +87,23 @@
     @include neonGlow($color-pink);
   }
   15% {
-    @include offGlow($color-pink)
+    @include offGlow($color-pink);
   }
   17% {
-    @include neonGlow($color-pink)
+    @include neonGlow($color-pink);
   }
   19% {
-    @include offGlow($color-pink)
+    @include offGlow($color-pink);
   }
   20%,
   80% {
-    @include neonGlow($color-pink)
+    @include neonGlow($color-pink);
   }
   81% {
-    @include offGlow($color-pink)
+    @include offGlow($color-pink);
   }
   85%,
   100% {
-    @include neonGlow($color-pink)
+    @include neonGlow($color-pink);
   }
 }
