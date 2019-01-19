@@ -1,10 +1,73 @@
 // Neon glow effect
 @mixin neonGlow($shadowColor) {
-  text-shadow: 0 0 10px $shadowColor, 0 0 15px $shadowColor, 0 0 20px $shadowColor, 0 0 25px $shadowColor, 0 0 35px $shadowColor;
+  text-shadow: 0 0 10px $shadowColor, 0 0 15px $shadowColor,
+    0 0 20px $shadowColor, 0 0 25px $shadowColor, 0 0 35px $shadowColor;
   color: #fff;
 }
 
 @mixin offGlow($originalTextColor) {
   text-shadow: 0 0 0 transparent;
   color: $originalTextColor;
+}
+
+// MEDIA QUERY MANAGER
+/*
+* Mobile
+0 - 600px:      Phone
+600 - 900px:    Tablet Portrait
+900 - 1200px:   Tablet Landscape
+
+(1200 - 1800px): Our Current Desing
+
+* Desktop
+1800px + :      Big Desktop
+*/
+
+// This one is a single media query example.
+@mixin respond-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+// Media Query Manager
+/*
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+
+// Media queries are not affected by our global font size setting, they are affected by the browser setting which is 16px font size
+// em will be used instead of rem. Some browsers have problems with rems.
+// 1em = 16px
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    // 600px
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    // 900px
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    // 1200px
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    // 1800px
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
 }
