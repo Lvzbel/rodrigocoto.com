@@ -2,17 +2,23 @@
   &:link,
   &:visited {
     font-family: "Audiowide", cursive;
-    font-size: 1.9rem;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
     display: inline-block;
-    color: $color-black;
-    background-color: $color-yellow;
-    border-radius: 4px;
     margin: auto;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
     transition: all 0.2s;
+  }
+
+  &__primary {
+    &:link,
+    &:visited {
+      border-radius: 3px;
+      font-size: 1.9rem;
+      padding: 1.5rem 4rem;
+      color: $color-black;
+      background-color: $color-yellow;
+    }
   }
 
   &:hover {
@@ -22,5 +28,16 @@
 
   &:active {
     transform: translateY(0rem) scale(1);
+  }
+
+  &__secondary {
+    &:link,
+    &:visited {
+      border-radius: 3px;
+      font-size: 1.3rem;
+      padding: 1.5rem 4rem;
+      color: $color-aqua;
+      background-color: $off-black;
+    }
   }
 }
