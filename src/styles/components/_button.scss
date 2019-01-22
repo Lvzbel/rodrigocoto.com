@@ -35,9 +35,11 @@
     &:visited {
       border-radius: 3px;
       font-size: 1.3rem;
-      padding: 1.5rem 4rem;
+      padding: 1.5rem 3.5rem;
       color: $color-aqua;
       background-color: $off-black;
+      border: 0.5px solid rgba($color-aqua, 0.3);
+      margin: 0.6rem;
     }
   }
 }
