@@ -1,10 +1,10 @@
 .porfolio {
-  height: 100vh;
+  height: 85rem;
+  padding: 5rem 0 5rem 0;
   background-color: darken($color-purple, 3%);
-  width: 100%;
 
   &__main-box {
-    height: 80%;
+    height: 75%;
     width: 100%;
   }
 
@@ -14,7 +14,7 @@
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 25% 25% 25% 25%;
     grid-gap: 1rem;
-    margin: auto;
+    margin: 5rem auto auto auto;
     width: 80%;
   }
 
@@ -22,10 +22,10 @@
     height: 100%;
     width: 100%;
     border-radius: 2px;
+    border: 1px solid rgba($color-aqua, 0.3);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.8);
+    transition: border 0.2s ease-in-out;
 
-    &:hover {
-      // transform: scale(1.1);
-    }
     &-1 {
       background-image: url(../images/project_1.jpg);
       background-size: cover;
@@ -58,5 +58,44 @@
       grid-column: 4 / 5;
       grid-row: 2 / 5;
     }
+  }
+
+  &__details {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($off-black, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform: translateY(3rem);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 0 0.7rem 0;
+  }
+
+  &__showcase:hover {
+    border: 1px solid rgba($color-pink, 0.3);
+  }
+
+  &__showcase:hover &__details {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__showcase:hover &__links {
+    transform: translateY(0);
   }
 }
