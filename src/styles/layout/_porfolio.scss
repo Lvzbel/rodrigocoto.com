@@ -1,7 +1,8 @@
 .porfolio {
   height: 85rem;
   padding: 5rem 0 5rem 0;
-  background-color: darken($color-purple, 3%);
+  // background-color: darken($color-purple, 3%);
+  background-color: $background-secondary;
 
   &__main-box {
     height: 75%;
