@@ -61,6 +61,11 @@
     right: 30px;
     background: none;
     border: none;
+
+    // Shows hamburger menu in tab mode.
+    @include respond(tab-land) {
+      display: block;
+    }
   }
 
   &__bar {
@@ -79,6 +84,7 @@
 
 .nav-mobile-active {
   padding: 0;
+  display: flex;
 }
 
 .list-mobile-active {
@@ -92,6 +98,12 @@
 
 .link-mobile-active {
   padding: 2rem 2.5rem;
+}
+
+.hide {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 
 // This animation is trying to recreate a neon sign flashing
