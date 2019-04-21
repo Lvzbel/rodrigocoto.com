@@ -7,13 +7,8 @@ const navNav = document.querySelector(".navigation__nav");
 const navList = document.querySelector(".navigation__list");
 const navLink = document.querySelector(".navigation__link");
 
-// if ( $(window).width() < 514)
-
-console.log(window.innerWidth);
-console.log(window.outerWidth);
-
 // Will add the class hide to navigation__nav
-window.innerWidth <= 1200 && navNav.classList.add("hide");
+// window.innerWidth <= 1200 && navNav.classList.add("hide");
 
 navButton.addEventListener("click", () => {
   // Apply all active classes.

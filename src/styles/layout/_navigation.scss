@@ -101,9 +101,11 @@
 }
 
 .hide {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
+  @include respond(tab-land) {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
 }
 
 // This animation is trying to recreate a neon sign flashing
