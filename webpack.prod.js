@@ -34,7 +34,7 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: [
           MiniCssExtractPlugin.loader, // 4. Extracs css into files
           "css-loader", // 3. Turn css into commonjs

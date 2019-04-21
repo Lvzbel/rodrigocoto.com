@@ -17,7 +17,7 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: [
           "style-loader", // 4. Inject styles into DOM
           "css-loader", // 3. Turn css into commonjs
