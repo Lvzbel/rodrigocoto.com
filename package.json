@@ -4,7 +4,8 @@
   "description": "Personal porfolio",
   "main": "app.js",
   "scripts": {
-    "dev-server": "webpack-dev-server"
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "Rodrigo O. Coto",
   "license": "ISC",
