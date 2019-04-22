@@ -42,4 +42,17 @@
       margin: 0.6rem;
     }
   }
+
+  &__tertiary {
+    &:link,
+    &:visited {
+      border-radius: 3px;
+      font-size: 1.3rem;
+      padding: 1.5rem 3.5rem;
+      color: $off-black;
+      background-color: $color-aqua;
+      border: 0.5px solid $off-black;
+      margin: 0.6rem;
+    }
+  }
 }
