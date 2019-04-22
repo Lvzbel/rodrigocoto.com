@@ -8,6 +8,8 @@
 
   &__certification {
     width: 40%;
+    display: flex;
+    flex-direction: column;
   }
 
   &__cert-name {
@@ -17,10 +19,17 @@
   }
 
   &__cert-organization {
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
+    font-size: 1.6rem;
   }
 
   &__image {
     width: 100%;
+    padding: 0 3rem;
+    margin: 3rem 0 0 0;
+  }
+
+  &__link {
+    align-self: center;
   }
 }
