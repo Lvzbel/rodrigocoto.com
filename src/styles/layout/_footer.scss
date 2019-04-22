@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-purple;
+  padding: 2rem 4rem 1.5rem 4rem;
+
+  &__contact {
+    margin: 0 0 1rem 0;
+    font-size: 1.6rem;
+    color: $color-white;
+  }
+
+  &__note {
+    align-self: center;
+    margin: 0;
+  }
+}
