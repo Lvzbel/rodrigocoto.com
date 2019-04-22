@@ -31,6 +31,21 @@ module.exports = {
             presets: ["@babel/preset-env"]
           }
         }
+      },
+      // loaders needed to parse @fontawesome
+      {
+        test: /\.woff2(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
+        loader: "url-loader",
+        options: { limit: 10000, mimetype: "application/font-woff2" }
+      },
+      {
+        test: /\.woff(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
+        loader: "url-loader",
+        options: { limit: 10000, mimetype: "application/font-woff" }
+      },
+      {
+        test: /\.(ttf|eot|svg|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/i,
+        loader: "file-loader"
       }
     ]
   }
