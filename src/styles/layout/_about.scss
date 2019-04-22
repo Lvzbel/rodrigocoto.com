@@ -1,3 +1,40 @@
 .about {
   padding: 8rem 20rem;
+
+  &__content {
+    display: flex;
+    padding-top: 4rem;
+  }
+
+  &__main-text {
+    padding-left: 6rem;
+  }
+
+  &__header {
+    margin: 3rem 0;
+    color: $color-pink;
+    font-size: 1.8rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__text {
+    line-height: 1.8;
+  }
+
+  &__main-photo {
+    // align-self: center;
+  }
+
+  &__image {
+    max-width: 60rem;
+    border: 1px solid rgba($color-aqua, $alpha: 0.3);
+    transition: border 0.2s ease-in-out;
+
+    &:hover {
+      border: 1px solid rgba($color-pink, $alpha: 0.3);
+    }
+  }
 }

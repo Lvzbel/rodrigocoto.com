@@ -1,0 +1,26 @@
+.accomplishments {
+  padding: 8rem 0;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__certification {
+    width: 40%;
+  }
+
+  &__cert-name {
+    margin: 2.5rem 0 0 0;
+    color: $color-pink;
+    font-size: 2.5rem;
+  }
+
+  &__cert-organization {
+    margin: 2rem 0 0 0;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
