@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "clean-webpack-plugin": "^2.0.1",
-    "normalize.css": "^8.0.1"
+    "sanitize.css": "^9.0.0"
   }
 }

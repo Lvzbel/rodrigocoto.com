@@ -1,2 +1,2 @@
-import "normalize.css/normalize.css";
+import "sanitize.css";
 import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
