@@ -51,11 +51,17 @@
     height: 100%;
     margin: 0;
     font-weight: 500;
-    padding: 0;
+    padding: 3rem 4rem;
+    list-style-type: none;
   }
 
-  &-skill:not(:last-child) {
-    padding-bottom: 0.5rem;
+  &-skill {
+    text-align: center;
+    font-size: 2rem;
+
+    &:not(:last-child) {
+      padding-bottom: 0.5rem;
+    }
   }
 }
 
