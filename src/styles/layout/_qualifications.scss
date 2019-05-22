@@ -3,6 +3,10 @@
 
   &__main-box {
     padding: 0 6rem;
+
+    @include respond(phone) {
+      padding: 0 2rem;
+    }
   }
 
   &__content {
