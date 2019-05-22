@@ -8,10 +8,22 @@
   }
 
   &__certification {
-    width: 40%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include respond(tab-land) {
+      width: 70%;
+    }
+
+    @include respond(tab-port) {
+      width: 80%;
+    }
+
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
   &__cert-name {
