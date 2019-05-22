@@ -32,7 +32,7 @@
     transition: border 0.2s ease-in-out;
 
     &-1 {
-      background-image: url(../images/project_1.jpg);
+      background-image: url(../images/project_1-res.jpg);
       background-size: cover;
       grid-column: 1 / 3;
       grid-row: 1 / 5;
@@ -43,7 +43,7 @@
       }
     }
     &-2 {
-      background-image: url(../images/project_2.jpg);
+      background-image: url(../images/project_2-res.jpg);
       background-size: cover;
       background-position: top;
       grid-column: 3 / 4;
@@ -55,7 +55,7 @@
       }
     }
     &-3 {
-      background-image: url(../images/project_3.jpg);
+      background-image: url(../images/project_3-res.jpg);
       background-size: cover;
       grid-column: 3 / 4;
       grid-row: 3 / 5;
@@ -66,7 +66,7 @@
       }
     }
     &-5 {
-      background-image: url(../images/project_5.jpg);
+      background-image: url(../images/project_5-res.jpg);
       background-size: cover;
       background-position: center;
       grid-column: 4 / 5;
