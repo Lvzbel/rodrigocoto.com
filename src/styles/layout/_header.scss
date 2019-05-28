@@ -12,10 +12,13 @@
   background-size: cover;
   background-position: top;
 
+  @include respond(phone) {
+    background-position: unset;
+  }
+
   &__text-box {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
 }
-

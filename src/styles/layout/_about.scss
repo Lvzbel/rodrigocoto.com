@@ -28,7 +28,11 @@
   }
 
   &__text {
-    line-height: 1.8;
+    line-height: 2;
     text-align: justify;
+
+    @include respond(phone) {
+      font-size: 1.9rem;
+    }
   }
 }
