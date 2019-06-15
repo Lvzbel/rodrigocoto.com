@@ -13,7 +13,10 @@
   &__logo-box {
     display: flex;
     padding: 3rem 3.5rem;
-    // width: 30%;
+
+    @include respond(phone) {
+      padding: 1.5rem 2.5rem;
+    }
   }
 
   &__nav {
@@ -66,6 +69,10 @@
     @include respond(tab-land) {
       display: block;
     }
+    @include respond(phone) {
+      top: 10px;
+      right: 14px;
+    }
   }
 
   &__bar {
@@ -74,6 +81,10 @@
     height: 5px;
     background-color: $color-white;
     margin: 6px 0;
+
+    @include respond(phone) {
+      height: 4px;
+    }
   }
 }
 
