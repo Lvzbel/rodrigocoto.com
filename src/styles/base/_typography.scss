@@ -42,7 +42,8 @@
 
 .sections__title {
   margin: 0px;
-  font-size: 6rem;
+  font-size: 6.7rem;
+  line-height: 6.7rem;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
   font-weight: 700rem;
@@ -52,14 +53,16 @@
   text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.3);
 
   @include respond(mini-phone) {
-    font-size: 5rem;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
     letter-spacing: 0.4rem;
   }
 }
 
 .sections__description {
   margin: 1.5rem 0px;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
+  line-height: 2.1rem;
   color: $color-white;
   font-family: "Inconsolata", monospace;
   font-weight: 700;
