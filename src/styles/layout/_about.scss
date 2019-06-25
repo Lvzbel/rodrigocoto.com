@@ -1,5 +1,6 @@
 .about {
   padding: 8rem 20rem;
+  background-color: $background-secondary;
 
   @include respond(tab-land) {
     padding: 4rem 10rem;
