@@ -8,12 +8,30 @@
       rgba($color-purple-dark, 0),
       rgba($color-purple-dark, 0)
     ),
-    url(../images/hero-image-2-res.jpg);
+    url(../images/hero-image-res.jpg);
   background-size: cover;
   background-position: top;
 
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-purple-dark, 0),
+        rgba($color-purple-dark, 0)
+      ),
+      url(../images/hero-image-res-m.jpg);
+  }
+
   @include respond(phone) {
     background-position: unset;
+  }
+
+  @include respond(big-desktop) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-purple-dark, 0),
+        rgba($color-purple-dark, 0)
+      ),
+      url(../images/hero-image-2-res.jpg);
   }
 
   &__text-box {
