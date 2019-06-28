@@ -3,7 +3,7 @@
   position: fixed;
   top: 0px;
   z-index: 10;
-  // background-color: purple;
+  transition: all 300ms ease-in;
 
   &__content {
     display: flex;
@@ -118,6 +118,10 @@
     top: -9999px !important;
     left: -9999px !important;
   }
+}
+
+.nav-scrolled {
+  background-color: rgba($color-purple, 0.9);
 }
 
 // This animation is trying to recreate a neon sign flashing

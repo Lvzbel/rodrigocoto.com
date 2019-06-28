@@ -38,3 +38,24 @@ navButton.addEventListener("click", () => {
     ? navLink.classList.remove(linkClass)
     : navLink.classList.add(linkClass);
 });
+
+// Observers
+
+const header = document.querySelector(".header");
+const nav = document.querySelector(".navigation");
+
+const navOPtions = { rootMargin: "-200px" };
+
+const sectionObserver = new IntersectionObserver((entries, sectionObserver) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      nav.classList.add("nav-scrolled");
+      console.log("Left Header");
+    } else {
+      nav.classList.remove("nav-scrolled");
+      console.log("In Header");
+    }
+  });
+}, navOPtions);
+
+sectionObserver.observe(header);
