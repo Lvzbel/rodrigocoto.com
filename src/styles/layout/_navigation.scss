@@ -29,7 +29,6 @@
     font-size: 3.6rem;
     font-family: "Audiowide", cursive;
     color: $color-pink;
-    animation: neonFlashGlow 3s infinite cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
 
   &__list {
@@ -122,6 +121,13 @@
 
 .nav-scrolled {
   background-color: rgba($color-purple, 0.9);
+}
+.flashing-neon {
+  animation: neonFlashGlow 3s infinite cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.lightup-neon {
+  @include neonGlow($color-pink);
 }
 
 // This animation is trying to recreate a neon sign flashing

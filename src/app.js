@@ -43,6 +43,7 @@ navButton.addEventListener("click", () => {
 
 const header = document.querySelector(".header");
 const nav = document.querySelector(".navigation");
+const logo = document.querySelector(".navigation__logo-text");
 
 const navOPtions = { rootMargin: "-20%" };
 
@@ -50,10 +51,12 @@ const sectionObserver = new IntersectionObserver((entries, sectionObserver) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
       nav.classList.add("nav-scrolled");
-      console.log("Left Header");
+      logo.classList.remove("flashing-neon");
+      logo.classList.add("lightup-neon");
     } else {
       nav.classList.remove("nav-scrolled");
-      console.log("In Header");
+      logo.classList.add("flashing-neon");
+      logo.classList.remove("lightup-neon");
     }
   });
 }, navOPtions);
