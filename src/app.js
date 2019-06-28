@@ -44,7 +44,7 @@ navButton.addEventListener("click", () => {
 const header = document.querySelector(".header");
 const nav = document.querySelector(".navigation");
 
-const navOPtions = { rootMargin: "-200px" };
+const navOPtions = { rootMargin: "-20%" };
 
 const sectionObserver = new IntersectionObserver((entries, sectionObserver) => {
   entries.forEach(entry => {
