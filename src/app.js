@@ -1,6 +1,8 @@
 import "./styles/styles.scss";
 
-// Navigation
+// =================================================
+// Responsive Navigation
+// =================================================
 const navButton = document.querySelector(".navigation__button");
 const navContent = document.querySelector(".navigation__content");
 const navNav = document.querySelector(".navigation__nav");
@@ -39,7 +41,9 @@ navButton.addEventListener("click", () => {
     : navLink.classList.add(linkClass);
 });
 
-// Observers
+// =================================================
+// Intersection Observers
+// =================================================
 
 const header = document.querySelector(".header");
 const nav = document.querySelector(".navigation");
